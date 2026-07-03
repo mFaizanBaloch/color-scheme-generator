@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Color Scheme Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div id="menu">
+                <input type="color">
+                <select name="scheme" id="select-scheme">
+                    <option value="Monochrome">Monochrome</option>
+                    <option value="Monochrome-dark">Monochrome-dark</option>
+                    <option value="Monochrome-light">Monochrome-light</option>
+                    <option value="Analogic">Analogic</option>
+                    <option value="Complement">Complement</option>
+                    <option value="Analogic-complement">Analogic-complement</option>
+                    <option value="Triad">Triad</option>
+                </select>
+                <button id="btn-get-scheme">Get color scheme</button>
+            </div>
+            <div id="display">
+                <div class="container">
+                    <div id="color-1"></div>
+                    <div id="color-code-1">#F55A5A</div>
+                </div>
+                <div class="container">
+                    <div id="color-2"></div>
+                    <div id="color-code-2">#2B283A</div>
+                </div>
+                <div class="container">
+                    <div id="color-3"></div>
+                    <div id="color-code-3">#FBF3AB</div>
+                </div>
+                <div class="container">
+                    <div id="color-4"></div>
+                    <div id="color-code-4">#AAD1B6</div>
+                </div>
+                <div class="container">
+                    <div id="color-5"></div>
+                    <div id="color-code-5">#A626D3</div>
+                </div>
+            </div>
+        </main>
+        <section id="tutorial">
+            <h1>How to use</h1>
+            <p>- Click the color box on top left to manually select a color, or use the eye dropper.</p>
+            <p>- Then select your coloring scheme form the drop down menu.</p>
+            <p>- Finally, click the "Get color scheme" button to generate your scheme!</p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
