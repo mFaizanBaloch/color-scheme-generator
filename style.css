@@ -125,3 +125,36 @@ select {
     font-size: 0.85rem;
     margin: 15px 10px;
 }
+
+@media (max-width: 480px) {
+    main {
+        width: 350px;
+    }
+
+    input[type="color"] {
+        width: 3.5em;
+    }
+
+    select {
+        width: 40%;
+    }
+
+    #btn-get-scheme {
+        width: 9em;
+    }
+
+    #tutorial {
+        width: 350px;
+    }
+
+    #tutorial h1 {
+        font-size: 1rem;
+        text-align: center;
+        margin: 28px 10px;
+    }
+
+    #tutorial p {
+        font-size: 0.875rem;
+        margin: 15px 10px;
+    }
+}
