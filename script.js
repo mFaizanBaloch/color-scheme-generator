@@ -1,6 +1,20 @@
+const display = document.getElementById("display")
 const inputColor = document.querySelector("input[type='color']")
 const inputSelectedScheme = document.getElementById("select-scheme")
 const btnGetScheme = document.getElementById("btn-get-scheme")
+
+// Functionality under progress for copying to clipboard.
+//
+// display.addEventListener('click', function(e){
+//     if (e.target.classList.contains("color-code-class")) {
+//         console.log(e.target.textContent)
+//     } 
+//     else if (e.target.classList.contains("color-img-class")) {
+//         const parentElement = e.target.parentElement
+//         const colorCodeChild = parentElement.querySelector(".color-code-class")
+//         console.log(colorCodeChild.textContent)
+//     }
+// })
 
 btnGetScheme.addEventListener('click', function(){
     const colorCode = inputColor.value.slice(1) // removing # from hex code because colorapi requires
